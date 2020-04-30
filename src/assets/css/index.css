@@ -1,0 +1,61 @@
+.title {
+	color: #024e50;
+	font-size: 1.5625rem;
+	flex-basis: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn {
+	margin-top: 1.5625rem;
+	margin-bottom: 1.5625rem;
+}
+
+.reasons .reasons-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 3rem 1rem;
+}
+
+#why-choose .reason {
+	width: calc(33.33% - 1rem);
+}
+
+#what-we-do .bg {
+	background-color: #fafafa;
+}
+
+#what-we-do .reasons-wrapper {
+	padding-bottom: 1rem;
+}
+
+#what-we-do .reason {
+	width: calc(25% - 1rem);
+}
+
+#what-we-do .reason svg {
+	height: 5.625rem;
+}
+
+#what-we-do .reason__title {
+	align-items: center;
+	display: flex;
+	font-size: 0.9375rem;
+	justify-content: center;
+	margin-bottom: 0.75rem;
+	min-height: 3.1875rem;
+}
+
+#what-we-do .btn {
+	margin-bottom: 0px;
+}
+
+.clients {
+	padding-bottom: 2rem;
+	padding-top: 1rem;
+}
+
+.clients .title {
+	margin-bottom: 2rem;
+}

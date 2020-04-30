@@ -1,0 +1,56 @@
+.clients .clients__carousel {
+	display: flex;
+	margin: auto;
+	max-width: 768px;
+	overflow-x: scroll;
+}
+
+.clients .client {
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 10.125rem;
+	margin-right: 1rem;
+	min-width: 10.125rem;
+	width: 10.125rem;
+}
+
+.clients .client.client--sefora {
+	background-image: url(../../img/clients/casa_sefora.jpg);
+}
+.clients .client.client--gaac {
+	background-image: url(../../img/clients/gaac.jpg);
+}
+.clients .client.client--massa {
+	background-image: url(../../img/clients/massa_mia.jpg);
+}
+.clients .client.client--pj {
+	background-image: url(../../img/clients/pj.jpg);
+}
+.clients .client.client--cchla {
+	background-image: url(../../img/clients/cchla.jpg);
+}
+.clients .client.client--adm {
+	background-image: url(../../img/clients/adm_consult.jpg);
+}
+.clients .client.client--pet-ee {
+	background-image: url(../../img/clients/pet_ee.jpg);
+}
+.clients .client.client--pet-producao {
+	background-image: url(../../img/clients/pet_producao.jpg);
+}
+.clients .client.client--imd {
+	background-image: url(../../img/clients/imd.jpg);
+}
+.clients .client.client--eject {
+	background-image: url(../../img/clients/eject.jpg);
+}
+.clients .client.client--pet-geo {
+	background-image: url(../../img/clients/pet_geografia.jpg);
+}
+.clients .client.client--econsul {
+	background-image: url(../../img/clients/econsul.jpg);
+}
+.clients .client.client--new-vision {
+	background-image: url(../../img/clients/new_vision.jpg);
+}

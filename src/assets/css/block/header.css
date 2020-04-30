@@ -23,6 +23,15 @@
 
 .header .header__nav li a {
 	padding: 0px 0.75rem;
+	transition: color 0.2s ease;
+}
+
+.header .header__nav li:nth-child(even) a:hover {
+	color: #17a3ba;
+}
+
+.header .header__nav li:nth-child(odd) a:hover {
+	color: #ee5c0a;
 }
 
 @media (min-width: 768px) {

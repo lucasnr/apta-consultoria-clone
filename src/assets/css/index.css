@@ -1,9 +1,5 @@
-.title {
-	color: #024e50;
-	font-size: 1.5625rem;
-	flex-basis: 100%;
-	text-align: center;
-	text-transform: uppercase;
+.banner {
+	background-image: url(../img/index-banner.jpg);
 }
 
 .btn {

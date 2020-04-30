@@ -59,6 +59,14 @@ button {
 	background-color: #093e47;
 }
 
+.title {
+	color: #024e50;
+	font-size: 1.5625rem;
+	flex-basis: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
 	.btn {
 		font-size: 1rem;

@@ -5,11 +5,13 @@
 .header .container {
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+	padding: 0px;
 }
 
 .header .header__nav {
-	display: flex;
+	display: none;
 }
 
 .header .header__nav li {
@@ -21,4 +23,14 @@
 
 .header .header__nav li a {
 	padding: 0px 0.75rem;
+}
+
+@media (min-width: 768px) {
+	.header .container {
+		flex-direction: row;
+	}
+
+	.header .header__nav {
+		display: flex;
+	}
 }

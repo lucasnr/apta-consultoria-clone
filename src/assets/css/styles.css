@@ -36,6 +36,7 @@ button {
 .container {
 	margin: auto;
 	max-width: 992px;
+	padding: 0px 0.75rem;
 	width: 100%;
 }
 
@@ -46,12 +47,20 @@ button {
 	color: #fff;
 	display: block;
 	margin: auto;
-	padding: 1.59375rem 1.40625rem;
+	font-size: 0.625rem;
+	padding: 1.5em 1.45em;
 	transition: background-color 0.4s ease;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 .btn:hover,
 .btn:focus {
 	background-color: #093e47;
+}
+
+@media (min-width: 768px) {
+	.btn {
+		font-size: 1rem;
+	}
 }

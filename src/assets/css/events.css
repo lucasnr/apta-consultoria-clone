@@ -1,0 +1,26 @@
+.banner {
+	background-image: url(../img/events-banner.jpg);
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.banner .banner__subtitle {
+	line-height: 1.25;
+}
+
+.banner .banner__text {
+	text-shadow: none;
+}
+
+.banner .banner__text span {
+	display: block;
+	margin-top: 1.25rem;
+}
+
+.banner .btn {
+	background-color: #f67d20;
+	display: inline-block;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding: 0.625rem 2rem;
+}

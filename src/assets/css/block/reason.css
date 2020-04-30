@@ -22,6 +22,14 @@
 	text-transform: uppercase;
 }
 
+.reason.reason--variant svg path {
+	fill: #093e47;
+}
+
+.reason.reason--variant .reason__title {
+	color: #093e47;
+}
+
 .reason .reason__description {
 	color: #313538;
 	font-family: 'Montserrat', sans-serif;

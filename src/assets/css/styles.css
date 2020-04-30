@@ -54,9 +54,18 @@ button {
 	text-transform: uppercase;
 }
 
+.btn.btn--variant {
+	background-color: #093e47;
+}
+
 .btn:hover,
 .btn:focus {
 	background-color: #093e47;
+}
+
+.btn.btn--variant:hover,
+.btn.btn.btn--variant:focus {
+	background-color: #ff9933;
 }
 
 .title {

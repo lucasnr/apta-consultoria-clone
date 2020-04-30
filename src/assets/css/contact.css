@@ -18,13 +18,13 @@
 	text-align: center;
 }
 
-.btn {
+.btn#fill-data {
 	max-width: 35.625rem;
 	width: 100%;
 }
 
 @media (max-width: 768px) {
-	.btn {
+	.btn#fill-data {
 		font-size: 0.75rem !important;
 	}
 }

@@ -53,14 +53,25 @@
 	margin-top: 1rem;
 }
 
+.footer aside {
+	display: flex;
+}
+
 .footer aside img {
-	margin-bottom: -2rem;
+	margin-top: 1rem;
+	width: 7rem;
 }
 
 @media (min-width: 576px) {
 	.footer .container {
 		align-items: flex-end;
 		flex-direction: row;
+	}
+
+	.footer aside img {
+		margin-bottom: -0.5rem;
+		margin-top: 0px;
+		width: 10.625rem;
 	}
 }
 

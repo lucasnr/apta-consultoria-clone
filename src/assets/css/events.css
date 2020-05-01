@@ -17,8 +17,11 @@
 	margin-top: 1.25rem;
 }
 
-.banner .btn {
+.banner .btn:not(:hover):not(:focus) {
 	background-color: #f67d20;
+}
+
+.banner .btn {
 	display: inline-block;
 	margin-bottom: 1rem;
 	margin-top: 1rem;

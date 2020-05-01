@@ -33,6 +33,11 @@ button {
 	cursor: pointer;
 }
 
+.ie-flex-container {
+	display: flex;
+	width: 100%;
+}
+
 .container {
 	margin: auto;
 	max-width: 992px;

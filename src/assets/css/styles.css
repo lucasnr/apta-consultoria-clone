@@ -33,7 +33,7 @@ button {
 }
 
 section {
-	padding: 2rem 0px;
+	padding: 3.5rem 0px;
 }
 
 .container {
@@ -75,6 +75,7 @@ section {
 	font-weight: 400;
 	margin-bottom: 2.5rem;
 	margin-top: 0px;
+	text-align: center;
 	text-shadow: -0.03em -0.05em #ff9933;
 	text-transform: uppercase;
 }

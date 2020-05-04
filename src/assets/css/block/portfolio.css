@@ -1,0 +1,54 @@
+.portfolio ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.portfolio ul li {
+	position: relative;
+	width: calc(50% - 0.75rem);
+}
+
+.portfolio ul li p {
+	align-items: center;
+	background-color: rgba(1, 61, 63, 0.6);
+	color: #eff4f5;
+	display: flex;
+	font-size: 1.25rem;
+	font-weight: 500;
+	height: 100%;
+	line-height: 1.25;
+	opacity: 0;
+	padding: 0.75rem;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	top: 0px;
+	transition: opacity 0.2s ease;
+	width: 100%;
+}
+
+.portfolio ul li:hover p {
+	opacity: 1;
+}
+
+.portfolio ul li:hover img {
+	filter: blur(1px);
+}
+
+.portfolio ul li img {
+	display: block;
+	margin-left: auto;
+}
+
+.portfolio ul li img,
+.portfolio ul li p {
+	max-width: 22.5rem;
+}
+
+.portfolio ul li:nth-child(even) img,
+.portfolio ul li:nth-child(even) p {
+	margin-left: 0px;
+	margin-right: auto;
+	left: 0;
+}

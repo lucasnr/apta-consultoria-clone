@@ -1,0 +1,45 @@
+.navbar {
+	background: rgba(239, 244, 245, 0.9);
+	padding: 1rem 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 25;
+}
+
+.navbar .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar a {
+	display: flex;
+}
+
+.navbar .navbar__brand img {
+	width: 7rem;
+}
+
+.navbar .navbar__nav {
+	display: flex;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.navbar .navbar__nav li {
+	display: flex;
+}
+
+.navbar .navbar__nav li a {
+	color: #024e50;
+	opacity: 0.75;
+	padding: 1rem 0.75rem;
+	transition: opacity 0.2s ease;
+}
+
+.navbar .navbar__nav li a:hover,
+.navbar .navbar__nav li a:focus {
+	opacity: 1;
+}

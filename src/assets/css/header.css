@@ -1,0 +1,45 @@
+.header {
+	align-items: center;
+	background-color: rgba(2, 78, 80, 0.41);
+	display: flex;
+	justify-content: center;
+	margin-top: 5.125rem;
+	min-height: calc(100vh - 5.125rem);
+	overflow: hidden;
+	padding: 2rem 3.5rem;
+	position: relative;
+}
+
+.header::after {
+	background-image: url(../img/members0.jpg);
+	background-position: center;
+	background-size: cover;
+	content: '';
+	filter: blur(4px);
+	height: calc(100% + 0.5rem);
+	left: 0;
+	margin: -0.125rem;
+	position: absolute;
+	top: 0;
+	width: calc(100% + 0.5rem);
+	z-index: -1;
+}
+
+.header .container {
+	margin-left: 0;
+	max-width: 38rem;
+}
+
+.header .header__title {
+	color: #eff4f5;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1.25;
+	margin: 0px;
+	text-transform: uppercase;
+}
+
+.header .btn {
+	margin-top: 1.5rem;
+}

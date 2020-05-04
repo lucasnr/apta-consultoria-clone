@@ -2,375 +2,745 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0," />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="Description"
+			content="Site da Apta Consultoria, a primeira Empresa Júnior de Psicologia do Rio Grande do Norte que presta serviços de consultoria na área de Gestão de Pessoas."
+		/>
 		<title>
 			Apta Consultoria Jr. | Natal-RN | Consutoria e Gestão de Pessoas
 		</title>
+
 		<link
-			rel="shortcut icon"
-			href="./assets/img/favicon.png"
-			type="image/x-icon"
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
 		/>
 
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
-		<link rel="stylesheet" href="./assets/css/index.css" />
-		<link rel="stylesheet" href="./assets/css/block/header.css" />
-		<link rel="stylesheet" href="./assets/css/block/banner.css" />
-		<link rel="stylesheet" href="./assets/css/block/reason.css" />
-		<link rel="stylesheet" href="./assets/css/block/clients.css" />
-		<link rel="stylesheet" href="./assets/css/block/footer.css" />
+		<link rel="stylesheet" href="./assets/css/navbar.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
 
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-		/>
+		<!-- Style para dinamizar banner inicial -->
 
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-		/>
+		<style type="text/css">
+			#Inicio {
+				background: linear-gradient(
+						rgba(2, 78, 80, 0.41),
+						rgba(2, 78, 80, 0.41)
+					),
+					url('/media/bannerSite/Projetos_contatos-2.jpg');
+
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding-top: 8%;
+				padding-bottom: 8%;
+				padding-left: 3%;
+				padding-right: 3%;
+				text-align: left;
+			}
+
+			#perguntas {
+				background: linear-gradient(rgba(2, 78, 80, 0.6), rgba(2, 78, 80, 0.6)),
+					url(/static/img/background.jpg);
+
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding-bottom: 2%;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+			#Contban {
+				background: linear-gradient(rgba(2, 78, 80, 0.7), rgba(2, 78, 80, 0.7)),
+					url('/media/bannerContatoSite/comercial_2-2.jpeg');
+
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding-top: 5%;
+				padding-bottom: 6%;
+				text-align: center;
+			}
+		</style>
 	</head>
+
 	<body>
-		<header class="header">
+		<nav class="navbar">
 			<div class="container">
-				<a href="./index.html" class="header__brand">
+				<a class="navbar__brand" href="#header">
 					<img
 						src="./assets/img/logo.png"
-						alt="Logomarca da Apta Consultoria"
+						alt="Logomarca da Apta Consultoria Jr"
 					/>
 				</a>
 
-				<nav class="header__navbar">
-					<ul class="header__nav">
-						<li><a href="./about.html">Sobre</a></li>
-						<li><a href="./events.html">Eventos</a></li>
-						<li><a href="./services.html">Serviços</a></li>
-						<li><a href="./contact.html">Contato</a></li>
-					</ul>
-				</nav>
+				<ul class="navbar__nav">
+					<li><a href="#inicio">Início</a></li>
+					<li><a href="#quem-somos">Quem Somos</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#clientes">Clientes</a></li>
+					<li><a href="#contatos">Contatos</a></li>
+					<li><a href="#blog">Blog</a></li>
+				</ul>
 			</div>
-		</header>
+		</nav>
 
 		<main>
-			<div class="ie-flex-container">
-				<section class="banner">
-					<article class="banner__content">
-						<div class="container">
-							<h3 class="banner__title">investindo <br />em pessoas</h3>
-							<h3 class="banner__subtitle">
-								Para transformar <br />o seu negócio
-							</h3>
+			<header class="header" id="inicio">
+				<div class="container">
+					<h1 class="header__title">
+						Soluções em Recursos Humanos e Gestão de pessoas através do olhar da
+						psicologia organizacional
+					</h1>
+					<a
+						href="https://app.pipefy.com/public/form/DeSiT9pT"
+						target="_blank"
+						class="btn btn--big"
+					>
+						SOLICITE UM DIAGNÓSTICO GRATUITO AQUI
+					</a>
+				</div>
+			</header>
+
+			<!-- Quem Somos -->
+			<div class="Quem-somos" id="Quem-somos">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2>Quem Somos</h2>
+							<p>
+								A Apta é uma Empresa Júnior de consultoria em gestão de pessoas,
+								fundada em agosto de 2010 por estudantes de psicologia que
+								buscavam ter mais experiência no mercado de trabalho e na área
+								da psicologia organizacional. Ao longo desse tempo, realizamos
+								projetos para pequenas e médias empresas da cidade de Natal-RN,
+								tendo sempre em vista incentiva-las a crescerem de forma
+								humanizada, com colaboradores motivados, capacitados e aptos a
+								exercerem suas funções.
+							</p>
 						</div>
-					</article>
-				</section>
-			</div>
+						<div class="col-lg-6">
+							<!-- Não está pegando imagem do servidor -->
 
-			<div class="container">
-				<button class="btn">Solicite um diagnóstico gratuito aqui</button>
-			</div>
-
-			<section id="why-choose" class="reasons">
-				<div class="container">
-					<h3 class="title">Por que escolher a apta?</h3>
-				</div>
-
-				<div class="container reasons-wrapper">
-					<article class="reason">
-						<svg viewBox="24.6 57.6 150.975 84.9">
-							<path
-								d="M175.5 99.2c.1-.7 0-1.5-.6-2.2-1.2-1.6-28.8-39.4-71.5-39.4h-.7C56 57.6 26.4 96.3 25 97.9c0 0 0 .1-.1.1 0 .1-.1.1-.1.3s-.1.1-.1.3c0 .1 0 .1-.1.3v1.8c0 .2 0 .1.1.3 0 .1 0 .1.1.3 0 .1.1.1.1.3 0 0 0 .1.1.1 1.2 1.6 30.8 40.8 77.7 40.8h.7c42.1-.4 70.3-39.3 71.5-40.9.6-.9.8-1.7.6-2.4zm-72.1 37.2h-.6c-38.2 0-65-28.9-71.4-36.6 6.4-7.6 33.2-36.1 71.4-36.1.1 0 .4.1.6.1 35.3 0 60.5 28.9 65.8 35.5-5.4 6.8-31.1 36.6-65.8 37.1z"
+							<img
+								src="/media/quem_somos/333.jpg"
+								class="img-fluid"
+								alt="Escritorio"
 							/>
-							<path
-								d="M101.3 70.5c-15.9 0-29 13-29 29.1s12.9 29.1 29 29.1 29-13 29-29.1-13-29.1-29-29.1zm0 52.2c-12.6 0-23-10.3-23-23.1s10.2-23.1 23-23.1 23 10.3 23 23.1-10.3 23.1-23 23.1z"
-							/>
-						</svg>
-						<h3 class="reason__title">Olhar</h3>
-						<h6 class="reason__description">
-							Carregamos um olhar humanizado, que pensa nas pessoas e compreende
-							que elas são o motor do seu negócio.
-						</h6>
-					</article>
-					<article class="reason">
-						<svg viewBox="70 70 60 60">
-							<path
-								d="M139 113l12.4-2.2-6.8-39.8-12.4 2.2 1 5.5-13.8 1.4c-4.8-3.1-15.4-9.7-17.5-9.7-.9 0-3 1-5.6 2.3-.8-.4-4.8-2.1-6.6-2.1-1.6 0-8.2 4.5-13.4 8.4l-9.6-1.2.8-4.7L55 71l-6.8 39.8 12.4 2.2 1.2-6.8c1.2.3 2.3.8 3.6 1.3 2 .9 4.2 1.8 7.2 2.2l-1.7 3.1c-1.5 3-.3 6.6 2.7 8.2l18.7 9.3c.9.4 1.8.6 2.7.6 2.2 0 4.3-1.2 5.4-3.4l4.1-8.2 7.1 4.3c1 .6 2.1.9 3.1.9 2.1 0 4-1 5.2-2.9l8.4-13.6 9.6-1.6 1.1 6.6zm3.6-39.1l6 35-7.6 1.3-6-35 7.6-1.3zm-91.6 35l6-35 7.6 1.3-6 35-7.6-1.3zm22 5.1l2.2-4c1.6.2 3.5.3 5.4.6l-5.1 8.7-.9-.4c-1.6-1-2.4-3.1-1.6-4.9zm19.5-1.8l3.4 2.1-7 11.7-5.2-2.6 6.9-11.4c.8 0 1.6.1 1.9.2zm-11.1 10l-3.7-1.8 5.6-9.4c1.6.2 3.2.4 4.6.6l-6.5 10.6zm16.8 4.3c-.9 1.8-3 2.5-4.8 1.6l-2.3-1.1 6.9-11.4 4.4 2.7-4.2 8.2zm19.6-6c-1 1.7-3.3 2.2-5 1.2l-19.5-11.9h-.2c-.2 0-1.5-.2-3.5-.5l-.2-.2-.1.1c-4.1-.6-10.5-1.4-14.6-1.7-3.5-.2-5.9-1.2-8.3-2.2-1.4-.6-2.7-1.1-4.2-1.5l4-23.4 10.7 1.4.4-.3c5.1-3.8 11.4-8 12.4-8.2.6 0 2.3.6 3.8 1.2-2.6 1.5-5.3 3.1-7 4.2l-.4.2-.1.3c-.1.2-1.8 6.6-2.5 10.6-.4 2.6-.6 5 .5 6.6.6.9 1.6 1.4 3 1.5 2.3.3 6.2.8 6.8-3 .3-2 1.8-7.8 2.2-9.7l5.2-2.6 26.2 15.1c1.7 1 2.2 3.3 1.2 5l-1 1.5L110.8 94l-1.3 2.1 16.9 10.2-2.5 4-16.8-10.1-1.3 2.1 16.8 10.1-2.5 4-16.7-10.1-1.3 2.1 16.7 10.1-1 2zm12.2-15.1l.9-1.4c1.8-2.9.8-6.6-2.1-8.3l-27.4-15.8-7.4 3.7-.2.6c-.1.3-2 8-2.5 10.4-.2 1-.4 1.5-4.1 1-1-.2-1.3-.5-1.4-.6-.6-.8-.3-2.8-.1-4.7.5-3.3 1.8-8.4 2.2-9.9 5.7-3.5 12.3-7.4 13.4-7.4 1.4.2 9.5 5 16.6 9.5l.4.2 14.9-1.5 3.9 23-7.1 1.2z"
-							/>
-						</svg>
-						<h3 class="reason__title">Suporte</h3>
-						<h6 class="reason__description">
-							Contamos com o estrutura da UFRN e o suporte do corpo docente do
-							curso de Psicologia durante toda a execução de nossos projetos.
-						</h6>
-					</article>
-					<article class="reason">
-						<svg viewBox="47.999 62.5 104 74.999">
-							<g>
-								<path
-									d="M96.43 94.141c0 5.558-10.616 10.064-23.712 10.064s-23.712-4.506-23.712-10.064 10.616-10.064 23.712-10.064S96.43 88.583 96.43 94.141z"
-								/>
-								<path
-									d="M151.576 72.564c0 5.558-10.616 10.064-23.712 10.064s-23.712-4.506-23.712-10.064S114.768 62.5 127.864 62.5s23.712 4.506 23.712 10.064z"
-								/>
-								<path
-									d="M93.711 107.041c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.018 2.018 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M93.711 117.829c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.017 2.017 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M93.711 128.618c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.017 2.017 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.014 2.014 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M103.953 88.306c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.8-.55c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.016 2.016 0 0 0-2.825.405 2.03 2.03 0 0 0 .405 2.833z"
-								/>
-								<path
-									d="M148.857 96.253c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.016 2.016 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M148.857 107.041c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.018 2.018 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M148.857 117.829c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.017 2.017 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.013 2.013 0 0 0-2.799-.549z"
-								/>
-								<path
-									d="M148.857 128.618c-4.424 2.983-12.458 4.836-20.964 4.836-8.982 0-17.227-2.004-21.519-5.232a2.017 2.017 0 0 0-2.825.405 2.026 2.026 0 0 0 .404 2.832c5.03 3.782 13.979 6.04 23.94 6.04 9.406 0 18.085-2.066 23.215-5.525a2.025 2.025 0 0 0 .548-2.807 2.014 2.014 0 0 0-2.799-.549z"
-								/>
-							</g>
-						</svg>
-						<h3 class="reason__title">baixo custo</h3>
-						<h6 class="reason__description">
-							Todos os nossos membros são voluntários, por isso praticamos
-							preços que são até 70% abaixo do valor de mercado.
-						</h6>
-					</article>
-				</div>
-			</section>
-
-			<section id="what-we-do" class="reasons">
-				<div class="container">
-					<h3 class="title">O que fazemos?</h3>
-				</div>
-
-				<div class="bg">
-					<div class="container reasons-wrapper">
-						<article class="reason">
-							<svg viewBox="34.5 28 130.999 144">
-								<path
-									d="M129.773 85.01h-5.955v-3.666c0-6.686-15.453-11.379-23.818-11.379-8.366 0-23.818 4.693-23.818 11.379v3.666h-5.955v-3.666c0-12.378 21.011-17.378 29.773-17.378 8.763 0 29.773 5 29.773 17.378v3.666z"
-								/>
-								<path
-									d="M93.489 172H80.293a2.98 2.98 0 0 1-2.836-2.087l-8.853-27.909H51.749c-9.51 0-17.249-7.796-17.249-17.378V88.597c0-6.94 5.604-12.586 12.492-12.586h.449c6.585 0 12.935 2.783 17.423 7.635l9.589 10.363h16.615c.834 0 1.63.353 2.194.973.564.618.845 1.449.772 2.285-.436 5.099-4.108 14.741-14.875 14.741H63.643a2.97 2.97 0 0 1-2.128-.901l-.22-.227v7.127h11.863c6.303 0 11.944 4.045 14.034 10.065.036.104.067.211.092.318l9.106 39.939a3.011 3.011 0 0 1-.573 2.541 2.965 2.965 0 0 1-2.328 1.13zm-11.021-5.999h7.282l-8.23-36.094c-1.295-3.536-4.636-5.901-8.362-5.901h-14.84c-1.644 0-2.977-1.343-2.977-3v-16.255l-8.382-8.627 4.257-4.198 13.68 14.081H79.16c4.947 0 7.176-3.315 8.17-5.999H73.158a2.966 2.966 0 0 1-2.178-.955L60.509 87.736a17.864 17.864 0 0 0-13.068-5.725h-.449c-3.605 0-6.537 2.954-6.537 6.587v36.028c0 6.275 5.066 11.379 11.294 11.379h19.03a2.98 2.98 0 0 1 2.836 2.087l8.853 27.909z"
-								/>
-								<path
-									d="M55.341 73.011c-8.07 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.817-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.269-6.678 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
-								/>
-								<path
-									d="M119.149 172h-13.194a2.966 2.966 0 0 1-2.329-1.131 3.022 3.022 0 0 1-.573-2.541l9.106-39.939c.023-.107.055-.214.09-.318 2.093-6.02 7.734-10.065 14.037-10.065h12.418v-7.685l-.797.804a2.963 2.963 0 0 1-2.108.882H120.84c-10.766 0-14.439-9.642-14.875-14.741a3.005 3.005 0 0 1 .77-2.285 2.968 2.968 0 0 1 2.195-.973h16.061l9.586-10.363c4.489-4.852 10.839-7.635 17.422-7.635h.451c7.074 0 13.049 5.764 13.049 12.586v36.028c0 9.419-8.153 17.378-17.805 17.378H130.84l-8.856 27.911a2.979 2.979 0 0 1-2.835 2.087zm-9.455-5.999h7.28l8.856-27.911a2.98 2.98 0 0 1 2.835-2.086h19.03c6.423 0 11.851-5.211 11.851-11.379V88.597c0-3.509-3.315-6.587-7.094-6.587h-.451a17.857 17.857 0 0 0-13.066 5.727l-10.47 11.316a2.968 2.968 0 0 1-2.178.955h-13.616c.991 2.682 3.222 5.999 8.17 5.999h13.723l13.962-14.1 4.216 4.236-8.083 8.164v16.699c0 1.657-1.332 3-2.977 3h-15.395c-3.727 0-7.068 2.365-8.365 5.901l-8.228 36.094z"
-								/>
-								<path
-									d="M144.659 73.011c-8.068 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.818-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.13-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
-								/>
-								<path d="M141.682 106.007v5.999H58.318v-5.999h83.364z" />
-								<path
-									d="M100 61.012c-8.07 0-14.886-6.868-14.886-14.998v-3C85.114 34.875 91.93 28 100 28c8.068 0 14.886 6.875 14.886 15.014v3c0 8.131-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
-								/>
-							</svg>
-
-							<div class="ie-flex-container">
-								<h3 class="reason__title">Processo seletivo</h3>
-							</div>
-							<h6 class="reason__description">
-								Fazemos todo o processo de recrutamento e seleção, escolhendo os
-								candidatos de acordo com o perfil definido por você.
-							</h6>
-						</article>
-
-						<article class="reason">
-							<svg viewBox="33 25 134 150">
-								<path
-									d="M164.6 25H50.9c-1.4 0-2.5 1.1-2.5 2.5v34.8h4.9V29.9h108.6V145h-22.6c-1.4 0-2.5 1.1-2.5 2.5v22.6H53.3v-37.3h-4.9v39.7c0 1.4.9 2.5 2.4 2.5h88.6s1.3-.3 1.8-.8l25.2-25c.2-.2.2-.5.3-.7v-.2c.4-.2.4-.5 0-.7v-120c.4-1.7-2.1-2.6-2.1-2.6zm-14.8 133.1l-8.3 8.3v-16.5h16.6l-8.3 8.2zM91.3 115H84V67.2c0-1.4-1.1-2.5-2.5-2.5H66.3c-1.4 0-2.5 1.1-2.5 2.5v15.3H50.9c-1.4 0-2.5 1.1-2.5 2.5v9.6H35.5c-1.4 0-2.5 1.1-2.5 2.5v20.1c0 1.4 1.1 2.5 2.5 2.5h55.8V115zm-42.9 0H37.9V99.6h10.5V115zm15.4 0H53.3V87.4h10.5V115zm15.4 0H68.7V70.4h9.7l.8 44.5v.1zm72.9-30.1V42.1c0-1.5-1-2.5-2.5-2.5H96.3c-1.4 0-2.5 1.1-2.5 2.5v42.8c0 1.4 1.1 2.5 2.5 2.5h53.3c1.5 0 2.5-1 2.5-2.5zm-40.5-2.3h-13V59.9h13v22.7zm0-27.6h-13v-9.7h13V55zm34.8 27.6h-30V59.9h30v22.7zm0-27.6h-30v-9.7h30V55zm3.3 39.7H97v4.9h52.7v-4.9zm0 13H97v4.9h52.7v-4.9zm0 12.2H97v4.9h52.7v-4.9zM61.4 40.4v4.9h15.4v-4.9H61.4zm0 17H84v-4.9H61.4v4.9zm17.8 75.4H61.4v4.9h17.8v-4.9zm7.3 4.1h17.8V132H86.5v4.9zm42.9-4.1h-17.8v4.9h17.8v-4.9zM79.2 145H61.4v4.9h17.8V145zm25.1 0H86.5v4.9h17.8V145zm25.1 0h-17.8v4.9h17.8V145zm-68 17h17.8v-4.9H61.4v4.9zm25.1 0h17.8v-4.9H86.5v4.9zm25.1 0h17.8v-4.9h-17.8v4.9z"
-								/>
-							</svg>
-
-							<div class="ie-flex-container">
-								<h3 class="reason__title">Descrição e análise de cargos</h3>
-							</div>
-							<h6 class="reason__description">
-								Elaboramos a DAC da sua empresa, contendo todos as funções,
-								habilidades e atitudes necessárias para a compor seus cargos.
-							</h6>
-						</article>
-
-						<article class="reason">
-							<svg viewBox="31.5 33 137 134">
-								<path d="M162.544 101.489V167h-5.957v-65.511h5.957z"></path>
-								<path d="M43.414 101.489v62.533h-5.957v-62.533h5.957z" />
-								<path d="M88.087 101.489v62.533H82.13v-62.533h5.957z" />
-								<path d="M168.5 98.511v5.956h-137v-5.956h137z" />
-								<path
-									d="M85.109 128.289H40.435a2.977 2.977 0 0 1-2.978-2.978v-23.822a2.978 2.978 0 0 1 2.978-2.978h44.674a2.977 2.977 0 0 1 2.978 2.978v23.822a2.978 2.978 0 0 1-2.978 2.978zm-41.696-5.956H82.13v-17.867H43.413v17.867z"
-								/>
-								<path
-									d="M85.109 152.111H40.435a2.977 2.977 0 0 1-2.978-2.978v-23.822a2.978 2.978 0 0 1 2.978-2.978h44.674a2.977 2.977 0 0 1 2.978 2.978v23.822a2.978 2.978 0 0 1-2.978 2.978zm-41.696-5.955H82.13v-17.867H43.413v17.867z"
-								/>
-								<path
-									d="M120.848 89.578H46.391a2.977 2.977 0 0 1-2.978-2.978V35.978A2.978 2.978 0 0 1 46.391 33h74.457a2.977 2.977 0 0 1 2.978 2.978V86.6a2.977 2.977 0 0 1-2.978 2.978zM49.37 83.622h68.5V38.956h-68.5v44.666z"
-								/>
-								<path d="M76.174 86.6v8.933h-5.957V86.6h5.957z" />
-								<path d="M97.022 86.6v8.933h-5.957V86.6h5.957z" />
-								<path
-									d="M159.565 95.533h-5.957v-26.8h-17.87v26.8h-5.957V65.756a2.978 2.978 0 0 1 2.978-2.978h23.826a2.977 2.977 0 0 1 2.978 2.978v29.777z"
-								/>
-								<path
-									d="M162.543 89.578h-5.957v-5.956h5.957v-8.933h-5.957v-5.956h5.957a5.963 5.963 0 0 1 5.957 5.956v8.933a5.963 5.963 0 0 1-5.957 5.956z"
-								/>
-								<path
-									d="M147.345 58.14l-5.343-2.635 1.472-2.984a3.838 3.838 0 0 0 .022-3.367 9.768 9.768 0 0 1 .023-8.494l1.451-3.001 5.363 2.594-1.451 3.001a3.833 3.833 0 0 0-.009 3.338 9.765 9.765 0 0 1-.057 8.564l-1.471 2.984z"
-								/>
-								<path d="M67.239 107.444v5.956h-8.935v-5.956h8.935z" />
-								<path d="M67.239 131.267v5.956h-8.935v-5.956h8.935z" />
-							</svg>
-
-							<div class="ie-flex-container">
-								<h3 class="reason__title">
-									Pesquisa de clima organizacional
-								</h3>
-							</div>
-							<h6 class="reason__description">
-								Através de um estudo cuidadoso, colhemos as percepções dos seus
-								colaboradores e propomos soluções para os problemas encontrados.
-							</h6>
-						</article>
-
-						<article class="reason">
-							<svg viewBox="28 32.5 144 135">
-								<path
-									d="M169 143.5H88c-1.658 0-3-1.342-3-3v-39h6v36h75v-99H91v30h-6v-33c0-1.658 1.342-3 3-3h81c1.658 0 3 1.342 3 3v105c0 1.658-1.342 3-3 3z"
-								/>
-								<path
-									d="M43 137.5c-8.13 0-15-6.87-15-15v-27c0-13.934 9.085-21 27-21h60c1.658 0 3 1.342 3 3 0 8.514-7.392 18-18 18H79v39h-6v-42c0-1.658 1.342-3 3-3h24c6.026 0 10.166-4.591 11.52-9H55c-18.612 0-21 8.016-21 15v27c0 4.793 4.207 9 9 9v6z"
-								/>
-								<path d="M79 95.5v72h-6v-72h6z" />
-								<path d="M64 128.5v39h-6v-39h6z" />
-								<path d="M49 95.5v72h-6v-72h6z" />
-								<path
-									d="M62.5 71.5c-9.407 0-16.5-6.448-16.5-15v-9c0-8.552 7.093-15 16.5-15S79 38.948 79 47.5v9c0 8.552-7.093 15-16.5 15zm0-33c-6.085 0-10.5 3.785-10.5 9v9c0 5.215 4.415 9 10.5 9s10.5-3.785 10.5-9v-9c0-5.215-4.415-9-10.5-9z"
-								/>
-								<path d="M133 137.5v27h-6v-27h6z" />
-								<path d="M149.093 163.835L130 144.742l-19.093 19.093-4.242-4.242
-								21.214-21.214a2.998 2.998 0 0 1 4.242 0l21.214 21.214-4.242
-								4.242z" / >
-							</svg>
-
-							<div class="ie-flex-container">
-								<h3 class="reason__title">Treinamento</h3>
-							</div>
-							<h6 class="reason__description">
-								Realizamos treinamentos com os seus colaboradores para
-								desenvolver neles as habilidades necessárias para a execução
-								plena de seu trabalho.
-							</h6>
-						</article>
-
-						<a href="./services.html" class="btn">
-							Saiba mais sobre os nossos serviços
-						</a>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<!-- Fim Quem somos -->
 
-			<section class="clients">
-				<div class="container">
-					<h3 class="title">Quem são nossos clientes?</h3>
-					<ul class="clients__carousel" id="carousel">
-						<li class="client client--new-vision"></li>
-						<li class="client client--sefora"></li>
-						<li class="client client--gaac"></li>
-						<li class="client client--massa"></li>
-						<li class="client client--pj"></li>
-						<li class="client client--cchla"></li>
-						<li class="client client--adm"></li>
-						<li class="client client--pet-ee"></li>
-						<li class="client client--pet-producao"></li>
-						<li class="client client--imd"></li>
-						<li class="client client--eject"></li>
-						<li class="client client--pet-geo"></li>
-						<li class="client client--econsul"></li>
-					</ul>
-				</div>
-			</section>
-		</main>
+			<!-- Serviços -->
+			<div class="servicos" id="Servicos">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2>SERVIÇOS</h2>
+						</div>
 
-		<footer class="footer">
-			<div class="footer__content">
-				<div class="container">
-					<section>
-						<h4 class="footer__title">Localização</h4>
-						<h4 class="footer__address">
-							<address>
-								Campus Universitário Central UFRN<br />
-								Setor de Aulas II<br />
-								Sala F5<br />
-								Natal - RN<br />
-								59078-970<br />
-							</address>
-						</h4>
+						<div class="col-lg-6">
+							<div>
+								<img
+									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_1.png"
+									class="img-fluid"
+									alt="serviços"
+								/>
 
-						<ul class="footer__social-media">
-							<li>
-								<a
-									href="https://www.facebook.com/aptaconsultoriajr"
-									target="_blank"
+								<h3>Processo Seletivo</h3>
+								<p>
+									Fazemos todo o processo de recrutamento e seleção, escolhendo
+									os candidatos de acordo com o perfil definido por você.
+								</p>
+							</div>
+
+							<div class="saiba-m">
+								<button
+									type="button"
+									class="btn btn-primary btn-lg"
+									data-toggle="modal"
+									data-target="#modal-01-processo-seletivo"
 								>
-									<img
-										src="./assets/img/facebook-logo.png"
-										alt="Logomarca do Facebook"
-									/>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.instagram.com/aptaconsultoria"
-									target="_blank"
-								>
-									<img
-										src="./assets/img/instagram-logo.png"
-										alt="Logomarca do Instagram"
-									/>
-								</a>
-							</li>
-						</ul>
+									SAIBA MAIS
+								</button>
+							</div>
+						</div>
 
-						<a href="mailto:aptaconsultoriajr@gmail.com" class="footer__email">
-							aptaconsultoriajr@gmail.com
-						</a>
-					</section>
-					<aside>
-						<img
-							src="./assets/img/logo-white.png"
-							alt="Logomarca da Apta Consultoria"
-						/>
-					</aside>
+						<!-- The Modal -->
+						<div class="modal fade" id="modal-01-processo-seletivo">
+							<div class="modal-dialog modal-dialog-scrollable">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div>
+										<button
+											type="button"
+											class="btn btn-sm text-light close"
+											style="float: left;"
+											data-dismiss="modal"
+										>
+											&times;
+										</button>
+										<br /><br />
+									</div>
+
+									<!-- Modal body -->
+									<div class="modal-body texto">
+										<h1>
+											Após estabelecer com você qual o perfil do candidato
+											desejado e as habilidades e competências necessárias para
+											o cargo, realizaremos todo o processo de recrutamento e
+											selecionaremos os candidatos mais adequados para o seu
+											perfil para que ao final do processo você escolha o
+											profissional que mais se encaixa com a sua empresa.
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div>
+								<img
+									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_2.png"
+									class="img-fluid"
+									alt="serviços"
+								/>
+
+								<h3>Pesquisa de Clima Organizacional</h3>
+								<p>
+									Através de um estudo cuidadoso, colhemos as percepções dos
+									seus colaboradores e propomos soluções para os problemas
+									encontrados.
+								</p>
+							</div>
+
+							<div class="saiba-m">
+								<button
+									type="button"
+									class="btn btn-primary btn-lg"
+									data-toggle="modal"
+									data-target="#modal-01-pesquisa-de-clima-organizacional"
+								>
+									SAIBA MAIS
+								</button>
+							</div>
+						</div>
+
+						<!-- The Modal -->
+						<div
+							class="modal fade"
+							id="modal-01-pesquisa-de-clima-organizacional"
+						>
+							<div class="modal-dialog modal-dialog-scrollable">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div>
+										<button
+											type="button"
+											class="btn btn-sm text-light close"
+											style="float: left;"
+											data-dismiss="modal"
+										>
+											&times;
+										</button>
+										<br /><br />
+									</div>
+
+									<!-- Modal body -->
+									<div class="modal-body texto">
+										<h1>
+											Através da Pesquisa de Clima Organizacional, medimos
+											quantitativamente o relacionamento entre os funcionários e
+											a empresa. Através dessa pesquisa, elaboramos uma análise,
+											um diagnóstico e possíveis soluções para os problemas
+											encontrados.
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div>
+								<img
+									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_3.png"
+									class="img-fluid"
+									alt="serviços"
+								/>
+
+								<h3>DESCRIÇÃO E ANÁLISE DE CARGO</h3>
+								<p>
+									Elaboramos a DAC da sua empresa, contendo todos as funções,
+									habilidades e atitudes necessárias para a compor seus cargos.
+								</p>
+							</div>
+
+							<div class="saiba-m">
+								<button
+									type="button"
+									class="btn btn-primary btn-lg"
+									data-toggle="modal"
+									data-target="#modal-01-descricao-e-analise-de-cargo"
+								>
+									SAIBA MAIS
+								</button>
+							</div>
+						</div>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="modal-01-descricao-e-analise-de-cargo">
+							<div class="modal-dialog modal-dialog-scrollable">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div>
+										<button
+											type="button"
+											class="btn btn-sm text-light close"
+											style="float: left;"
+											data-dismiss="modal"
+										>
+											&times;
+										</button>
+										<br /><br />
+									</div>
+
+									<!-- Modal body -->
+									<div class="modal-body texto">
+										<h1>
+											O documento de Descrição e Análise de cargos contem uma
+											descrição completa das atribuições, deveres e
+											responsabilidades de um cargo, além de conter uma análise
+											das habilidades, capacidades e conhecimentos requisitados
+											para o pleno cumprimento de cada função.
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div>
+								<img
+									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_4.png"
+									class="img-fluid"
+									alt="serviços"
+								/>
+
+								<h3>TREINAMENTO</h3>
+								<p>
+									Realizamos treinamentos com os seus colaboradores para
+									desenvolver neles as habilidades necessárias para a execução
+									plena de seu trabalho.
+								</p>
+							</div>
+
+							<div class="saiba-m">
+								<button
+									type="button"
+									class="btn btn-primary btn-lg"
+									data-toggle="modal"
+									data-target="#modal-01-treinamento"
+								>
+									SAIBA MAIS
+								</button>
+							</div>
+						</div>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="modal-01-treinamento">
+							<div class="modal-dialog modal-dialog-scrollable">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div>
+										<button
+											type="button"
+											class="btn btn-sm text-light close"
+											style="float: left;"
+											data-dismiss="modal"
+										>
+											&times;
+										</button>
+										<br /><br />
+									</div>
+
+									<!-- Modal body -->
+									<div class="modal-body texto">
+										<h1>
+											Realizamos treinamentos buscando aprimorar ou desenvolver
+											habilidades e conhecimentos considerados necessários para
+											a plena realização das atividades de cada cargo na sua
+											empresa, possibilitando uma melhora no desempenho dos seus
+											colaboradores.
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</footer>
 
-		<script
-			src="https://code.jquery.com/jquery-3.5.0.min.js"
-			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-			crossorigin="anonymous"
-		></script>
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<script src="./assets/js/carousel.js"></script>
+			<!-- Perguntas -->
+			<div class="perguntas" id="perguntas">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="text-perguntas">
+								<h3>Por que entrar em contato com a Apta?</h3>
+
+								<p>Sente que seus funcionários estão desmotivados?</p>
+
+								<p>
+									Sente que seus funcionários estão insatisfeitos com suas
+									devidas tarefas?
+								</p>
+
+								<p>
+									Você tem percebido muita rotatividade de membros na sua
+									empresa?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim Perguntas -->
+
+			<!-- Potifólio -->
+			<div class="portfolio" id="Portfolio">
+				<h2>Portfólio</h2>
+				<div class="container-fluid">
+					<div class="carrossel">
+						<div class="port">
+							<img src=" /media/portfolio/portfolio-2.jpg" alt="portfolio" />
+
+							<div class="overlay">
+								<p>
+									No mês de junho de 2019, o nosso time participou do Portto,
+									evento realizado pela RN Júnior, onde tivemos diversas
+									capacitações, treinamentos e uma vivência empresarial através
+									da rede.
+								</p>
+							</div>
+						</div>
+
+						<div class="port">
+							<img
+								src=" /media/portfolio/portfolio_psicaf%C3%A9.jpg"
+								alt="portfolio"
+							/>
+
+							<div class="overlay">
+								<p>
+									No dia 27 de agosto de 2019, realizamos um Psicafé em
+									comemoração do dia do psicólogo no qual tratamos os desafios e
+									oportunidades que a internet traz ao fazer da psicologia.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim Portfólio -->
+
+			<!-- blog -->
+			<div class="pag-blog" id="blog">
+				<h2>BLOG</h2>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<a
+								href="/blog/o-mindfulness-como-ferramenta-para-melhorar-o-seu-/"
+								><img
+									src="/media/blogpost/Fundo_blog_Lucas.png"
+									class="img-fluid"
+									alt="post do blog"
+							/></a>
+						</div>
+
+						<div class="col-sm-4">
+							<a
+								href="/blog/trabalho-remoto-dicas-de-como-acompanhar-sua-equip/"
+								><img
+									src="/media/blogpost/Fundo_blog_Vivi_xzYvKHg.png"
+									class="img-fluid"
+									alt="post do blog"
+							/></a>
+						</div>
+
+						<div class="col-sm-4">
+							<a href="/blog/importancia-do-home-office-em-meio-atual-crise/"
+								><img
+									src="/media/blogpost/Fundo_blog_Vivi_2.png"
+									class="img-fluid"
+									alt="post do blog"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<a href="/blog/"
+					><button type="button" class="btn btn-primary btn-lg">
+						VEJA MAIS
+					</button></a
+				>
+				<!-- fim blog -->
+
+				<!-- Seçao evento -->
+			</div>
+			<!-- Fim da Seçao evento -->
+
+			<!-- Clientes -->
+			<div class="Clientes" id="Clientes">
+				<h2 id="Contatos">CLIENTES</h2>
+				<div class="slick">
+					<a href="https://www.facebook.com/EconsulEJ/" target="_blank"
+						><img
+							src="/media/Clientes_pic/Econsul.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://petgeografiaufrn.blogspot.com/" target="_blank"
+						><img
+							src="/media/Clientes_pic/Pet_Geografia.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://www.instagram.com/newvisionoticas/" target="_blank"
+						><img
+							src="/media/Clientes_pic/New_Vision.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://www.petproducaoufrn.com/" target="_blank"
+						><img
+							src="/media/Clientes_pic/nova-logo-pet.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://www.imd.ufrn.br/portal/" target="_blank"
+						><img
+							src="/media/Clientes_pic/IMD.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="http://www.ejectufrn.com.br" target="_blank"
+						><img
+							src="/media/Clientes_pic/Logo_7.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a
+						href="https://https://www.instagram.com/engenhariainclude/?hl=pt-br"
+						target="_blank"
+						><img
+							src="/media/Clientes_pic/INCLUDEE.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a
+						href="https://pt-br.facebook.com/contatocasasefora/"
+						target="_blank"
+						><img
+							src="/media/Clientes_pic/Casa_S%C3%A9fora.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://produtivajunior.com.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/PRODUTIVA.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://admconsult.com.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/ADM_CONSULT.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a
+						href="https://www.influx.com.br/unidade/influx-nova-parnamirim/"
+						target="_blank"
+						><img
+							src="/media/Clientes_pic/INFLUX.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://www.remaxtop.com.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/REMAX.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="http://petee.ct.ufrn.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/PET_EE.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://www.gaccrn.org.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/GACC.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="http://www.59mil.com.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/2ce1f0120684217.5a3cfda4183c4.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a
+						href="https://pt-br.facebook.com/pg/ActuarConsultJr/posts/"
+						target="_blank"
+						><img
+							src="/media/Clientes_pic/Actuar.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://pt-br.facebook.com/massamia" target="_blank"
+						><img
+							src="/media/Clientes_pic/Massa_Mia.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://pt-br.facebook.com/solidusjunior/" target="_blank"
+						><img
+							src="/media/Clientes_pic/solidus.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+
+					<a href="https://consej.com.br/" target="_blank"
+						><img
+							src="/media/Clientes_pic/consej.png"
+							class="img-fluid"
+							alt="Clientes"
+					/></a>
+				</div>
+				<h2 id="Contatos">CONTATOS</h2>
+			</div>
+			<!-- Fim Clientes -->
+
+			<!-- Contatos -->
+			<div class="contatos" id="Contban">
+				<h1>VAMOS CONVERSAR UM POUCO</h1>
+				<a href="https://app.pipefy.com/public/form/DeSiT9pT" target="_blank"
+					><button type="button" class="btn btn-primary btn-lg">
+						Mande-nos uma mensagem
+					</button></a
+				>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.5805032048293!2d-35.19827518017022!3d-5.8409336295532865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff9e18429503%3A0xe1d9f1b5bc1791c5!2sApta+Consultoria+Jr.!5e0!3m2!1spt-BR!2sbr!4v1565579539488!5m2!1spt-BR!2sbr"
+				title="Mapa"
+				width="100%"
+				height="332"
+				frameborder="0"
+				style="border: 0;"
+				allowfullscreen
+			></iframe>
+			<!-- fim contatos -->
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-10">
+						<div class="info">
+							<img src="/static/img/envelope.png" class="icone" alt="e-mail" />
+							<p>
+								<a
+									href="/cdn-cgi/l/email-protection"
+									class="__cf_email__"
+									data-cfemail="7415040015171b1a070118001b061d151e06341319151d185a171b19"
+									>[email&#160;protected]</a
+								>
+							</p>
+							<br />
+						</div>
+
+						<div class="info">
+							<img src="/static/img/clock.png" class="icone" alt="relógio" />
+							<p>
+								Horário:<br />Segunda à Sexta: 08h00-12h00,<br />14h00-18h00<br />Sábado
+								e Domingo: Fechado
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-2">
+						<div class="icone-1">
+							<a
+								href="https://www.facebook.com/aptaconsultoriajr/"
+								target="_blank"
+								><img
+									src="/static/img/facebook.png"
+									class="icone"
+									alt="Facebook"
+							/></a>
+						</div>
+
+						<div class="icone-2">
+							<a
+								href="https://www.instagram.com/aptaconsultoria/?hl=pt-br"
+								target="_blank"
+								><img
+									src="/static/img/instagram.png"
+									class="icone"
+									alt="Instagram"
+							/></a>
+						</div>
+
+						<div class="icone-3">
+							<a
+								href="https://api.whatsapp.com/send?phone=558498325622"
+								target="_blank"
+								><img
+									src="/static/img/whatsapp.png"
+									class="icone"
+									alt="Whatsapp"
+							/></a>
+						</div>
+
+						<div class="icone-4">
+							<a href="/blog/" target="_blank"
+								><img src="/static/img/blog.png" class="icone" alt="blog"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="rodape">
+				<p>
+					Apta Consultoria Jr © 2019 Todos os Direitos Reservados | Desenvolvido
+					pela
+				</p>
+				<a href="http://www.ejectufrn.com.br/"
+					><img src="/static/img/eject-white.png" alt="EJECT"
+				/></a>
+			</div>
+		</footer>
 	</body>
 </html>

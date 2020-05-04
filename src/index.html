@@ -25,6 +25,17 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 		/>
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
 	</head>
 	<body>
 		<header class="header">
@@ -278,7 +289,8 @@
 			<section class="clients">
 				<div class="container">
 					<h3 class="title">Quem são nossos clientes?</h3>
-					<ul class="clients__carousel">
+					<ul class="clients__carousel" id="carousel">
+						<li class="client client--new-vision"></li>
 						<li class="client client--sefora"></li>
 						<li class="client client--gaac"></li>
 						<li class="client client--massa"></li>
@@ -291,7 +303,6 @@
 						<li class="client client--eject"></li>
 						<li class="client client--pet-geo"></li>
 						<li class="client client--econsul"></li>
-						<li class="client client--new-vision"></li>
 					</ul>
 				</div>
 			</section>
@@ -350,5 +361,16 @@
 				</div>
 			</div>
 		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="./assets/js/carousel.js"></script>
 	</body>
 </html>

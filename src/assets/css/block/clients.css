@@ -1,8 +1,11 @@
+.slick-arrow::before {
+	color: #333 !important;
+}
+
 .clients .clients__carousel {
 	display: flex;
 	margin: auto;
 	max-width: 768px;
-	overflow-x: scroll;
 }
 
 .clients .client {
@@ -11,8 +14,6 @@
 	border-radius: 50%;
 	height: 10.125rem;
 	margin-right: 1rem;
-	min-width: 10.125rem;
-	width: 10.125rem;
 }
 
 .clients .client.client--sefora {

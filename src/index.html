@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="./assets/css/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/header.css" />
 		<link rel="stylesheet" href="./assets/css/block/who-we-are.css" />
+		<link rel="stylesheet" href="./assets/css/block/services.css" />
 	</head>
 
 	<body>
@@ -50,7 +51,7 @@
 			<header class="header" id="inicio">
 				<div class="container">
 					<h1 class="header__title">
-						Soluções em Recursos Humanos e Gestão de pessoas através do olhar da
+						Soluções em recursos humanos e gestão de pessoas através do olhar da
 						psicologia organizacional
 					</h1>
 					<a
@@ -58,7 +59,7 @@
 						target="_blank"
 						class="btn btn--big"
 					>
-						SOLICITE UM DIAGNÓSTICO GRATUITO AQUI
+						Solicite um diagnóstico gratuito aqui
 					</a>
 				</div>
 			</header>
@@ -72,7 +73,7 @@
 						/>
 
 						<figcaption>
-							<h2 class="title">Quem Somos</h2>
+							<h2 class="title">Quem somos</h2>
 							<p>
 								A Apta é uma Empresa Júnior de consultoria em gestão de pessoas,
 								fundada em agosto de 2010 por estudantes de psicologia que
@@ -88,254 +89,74 @@
 				</div>
 			</section>
 
-			<!-- Serviços -->
-			<div class="servicos" id="Servicos">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12">
-							<h2>SERVIÇOS</h2>
-						</div>
+			<section class="services" id="servicos">
+				<div class="container">
+					<h2 class="title">Serviços</h2>
 
-						<div class="col-lg-6">
-							<div>
-								<img
-									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_1.png"
-									class="img-fluid"
-									alt="serviços"
-								/>
+					<ul class="services__list">
+						<li class="service">
+							<img
+								src="./assets/img/icons/selection.svg"
+								alt="Ícone de um serviço"
+							/>
 
-								<h3>Processo Seletivo</h3>
-								<p>
-									Fazemos todo o processo de recrutamento e seleção, escolhendo
-									os candidatos de acordo com o perfil definido por você.
-								</p>
-							</div>
+							<h3 class="service__title">Processo seletivo</h3>
+							<h4 class="service__description">
+								Fazemos todo o processo de recrutamento e seleção, escolhendo os
+								candidatos de acordo com o perfil definido por você.
+							</h4>
 
-							<div class="saiba-m">
-								<button
-									type="button"
-									class="btn btn-primary btn-lg"
-									data-toggle="modal"
-									data-target="#modal-01-processo-seletivo"
-								>
-									SAIBA MAIS
-								</button>
-							</div>
-						</div>
+							<button class="btn">Saiba mais</button>
+						</li>
 
-						<!-- The Modal -->
-						<div class="modal fade" id="modal-01-processo-seletivo">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-									<!-- Modal Header -->
-									<div>
-										<button
-											type="button"
-											class="btn btn-sm text-light close"
-											style="float: left;"
-											data-dismiss="modal"
-										>
-											&times;
-										</button>
-										<br /><br />
-									</div>
+						<li class="service">
+							<img
+								src="./assets/img/icons/research.svg"
+								alt="Ícone de um serviço"
+							/>
 
-									<!-- Modal body -->
-									<div class="modal-body texto">
-										<h1>
-											Após estabelecer com você qual o perfil do candidato
-											desejado e as habilidades e competências necessárias para
-											o cargo, realizaremos todo o processo de recrutamento e
-											selecionaremos os candidatos mais adequados para o seu
-											perfil para que ao final do processo você escolha o
-											profissional que mais se encaixa com a sua empresa.
-										</h1>
-									</div>
-								</div>
-							</div>
-						</div>
+							<h3 class="service__title">Pesquisa de clima organizacional</h3>
+							<h4 class="service__description">
+								Através de um estudo cuidadoso, colhemos as percepções dos seus
+								colaboradores e propomos soluções para os problemas encontrados.
+							</h4>
 
-						<div class="col-lg-6">
-							<div>
-								<img
-									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_2.png"
-									class="img-fluid"
-									alt="serviços"
-								/>
+							<button class="btn">Saiba mais</button>
+						</li>
 
-								<h3>Pesquisa de Clima Organizacional</h3>
-								<p>
-									Através de um estudo cuidadoso, colhemos as percepções dos
-									seus colaboradores e propomos soluções para os problemas
-									encontrados.
-								</p>
-							</div>
+						<li class="service">
+							<img
+								src="./assets/img/icons/description.svg"
+								alt="Ícone de um serviço"
+							/>
 
-							<div class="saiba-m">
-								<button
-									type="button"
-									class="btn btn-primary btn-lg"
-									data-toggle="modal"
-									data-target="#modal-01-pesquisa-de-clima-organizacional"
-								>
-									SAIBA MAIS
-								</button>
-							</div>
-						</div>
+							<h3 class="service__title">Descrição e análise de cargo</h3>
+							<h4 class="service__description">
+								Elaboramos a DAC da sua empresa, contendo todos as funções,
+								habilidades e atitudes necessárias para a compor seus cargos.
+							</h4>
 
-						<!-- The Modal -->
-						<div
-							class="modal fade"
-							id="modal-01-pesquisa-de-clima-organizacional"
-						>
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-									<!-- Modal Header -->
-									<div>
-										<button
-											type="button"
-											class="btn btn-sm text-light close"
-											style="float: left;"
-											data-dismiss="modal"
-										>
-											&times;
-										</button>
-										<br /><br />
-									</div>
+							<button class="btn">Saiba mais</button>
+						</li>
 
-									<!-- Modal body -->
-									<div class="modal-body texto">
-										<h1>
-											Através da Pesquisa de Clima Organizacional, medimos
-											quantitativamente o relacionamento entre os funcionários e
-											a empresa. Através dessa pesquisa, elaboramos uma análise,
-											um diagnóstico e possíveis soluções para os problemas
-											encontrados.
-										</h1>
-									</div>
-								</div>
-							</div>
-						</div>
+						<li class="service">
+							<img
+								src="./assets/img/icons/training.svg"
+								alt="Ícone de um serviço"
+							/>
 
-						<div class="col-lg-6">
-							<div>
-								<img
-									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_3.png"
-									class="img-fluid"
-									alt="serviços"
-								/>
+							<h3 class="service__title">Treinamento</h3>
+							<h4 class="service__description">
+								Realizamos treinamentos com os seus colaboradores para
+								desenvolver neles as habilidades necessárias para a execução
+								plena de seu trabalho.
+							</h4>
 
-								<h3>DESCRIÇÃO E ANÁLISE DE CARGO</h3>
-								<p>
-									Elaboramos a DAC da sua empresa, contendo todos as funções,
-									habilidades e atitudes necessárias para a compor seus cargos.
-								</p>
-							</div>
-
-							<div class="saiba-m">
-								<button
-									type="button"
-									class="btn btn-primary btn-lg"
-									data-toggle="modal"
-									data-target="#modal-01-descricao-e-analise-de-cargo"
-								>
-									SAIBA MAIS
-								</button>
-							</div>
-						</div>
-
-						<!-- The Modal -->
-						<div class="modal fade" id="modal-01-descricao-e-analise-de-cargo">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-									<!-- Modal Header -->
-									<div>
-										<button
-											type="button"
-											class="btn btn-sm text-light close"
-											style="float: left;"
-											data-dismiss="modal"
-										>
-											&times;
-										</button>
-										<br /><br />
-									</div>
-
-									<!-- Modal body -->
-									<div class="modal-body texto">
-										<h1>
-											O documento de Descrição e Análise de cargos contem uma
-											descrição completa das atribuições, deveres e
-											responsabilidades de um cargo, além de conter uma análise
-											das habilidades, capacidades e conhecimentos requisitados
-											para o pleno cumprimento de cada função.
-										</h1>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-6">
-							<div>
-								<img
-									src="/media/Servi%C3%A7os_pic/Servi%C3%A7os_4.png"
-									class="img-fluid"
-									alt="serviços"
-								/>
-
-								<h3>TREINAMENTO</h3>
-								<p>
-									Realizamos treinamentos com os seus colaboradores para
-									desenvolver neles as habilidades necessárias para a execução
-									plena de seu trabalho.
-								</p>
-							</div>
-
-							<div class="saiba-m">
-								<button
-									type="button"
-									class="btn btn-primary btn-lg"
-									data-toggle="modal"
-									data-target="#modal-01-treinamento"
-								>
-									SAIBA MAIS
-								</button>
-							</div>
-						</div>
-
-						<!-- The Modal -->
-						<div class="modal fade" id="modal-01-treinamento">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-									<!-- Modal Header -->
-									<div>
-										<button
-											type="button"
-											class="btn btn-sm text-light close"
-											style="float: left;"
-											data-dismiss="modal"
-										>
-											&times;
-										</button>
-										<br /><br />
-									</div>
-
-									<!-- Modal body -->
-									<div class="modal-body texto">
-										<h1>
-											Realizamos treinamentos buscando aprimorar ou desenvolver
-											habilidades e conhecimentos considerados necessários para
-											a plena realização das atividades de cada cargo na sua
-											empresa, possibilitando uma melhora no desempenho dos seus
-											colaboradores.
-										</h1>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+							<button class="btn">Saiba mais</button>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</section>
 
 			<!-- Perguntas -->
 			<div class="perguntas" id="perguntas">

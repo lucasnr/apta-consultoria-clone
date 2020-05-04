@@ -1,0 +1,23 @@
+.who-we-are figure {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding: 3.5rem 2rem;
+}
+
+.who-we-are figure > * {
+	width: calc(50% - 0.75rem);
+}
+
+.who-we-are figure figcaption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.who-we-are figure figcaption p {
+	color: #212529;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: auto;
+}

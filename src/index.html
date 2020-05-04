@@ -21,47 +21,7 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link rel="stylesheet" href="./assets/css/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/header.css" />
-
-		<!-- Style para dinamizar banner inicial -->
-
-		<style type="text/css">
-			#Inicio {
-				background: linear-gradient(
-						rgba(2, 78, 80, 0.41),
-						rgba(2, 78, 80, 0.41)
-					),
-					url('/media/bannerSite/Projetos_contatos-2.jpg');
-
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-				padding-top: 8%;
-				padding-bottom: 8%;
-				padding-left: 3%;
-				padding-right: 3%;
-				text-align: left;
-			}
-
-			#perguntas {
-				background: linear-gradient(rgba(2, 78, 80, 0.6), rgba(2, 78, 80, 0.6)),
-					url(/static/img/background.jpg);
-
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-				padding-bottom: 2%;
-				padding-left: 5%;
-				padding-right: 5%;
-			}
-			#Contban {
-				background: linear-gradient(rgba(2, 78, 80, 0.7), rgba(2, 78, 80, 0.7)),
-					url('/media/bannerContatoSite/comercial_2-2.jpeg');
-
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-				padding-top: 5%;
-				padding-bottom: 6%;
-				text-align: center;
-			}
-		</style>
+		<link rel="stylesheet" href="./assets/css/block/who-we-are.css" />
 	</head>
 
 	<body>
@@ -103,12 +63,16 @@
 				</div>
 			</header>
 
-			<!-- Quem Somos -->
-			<div class="Quem-somos" id="Quem-somos">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-6">
-							<h2>Quem Somos</h2>
+			<section class="who-we-are" id="quem-somos">
+				<div class="container">
+					<figure>
+						<img
+							src="./assets/img/members1.jpg"
+							alt="Foto dos membros da Apta Consultoria Jr"
+						/>
+
+						<figcaption>
+							<h2 class="title">Quem Somos</h2>
 							<p>
 								A Apta é uma Empresa Júnior de consultoria em gestão de pessoas,
 								fundada em agosto de 2010 por estudantes de psicologia que
@@ -119,20 +83,10 @@
 								humanizada, com colaboradores motivados, capacitados e aptos a
 								exercerem suas funções.
 							</p>
-						</div>
-						<div class="col-lg-6">
-							<!-- Não está pegando imagem do servidor -->
-
-							<img
-								src="/media/quem_somos/333.jpg"
-								class="img-fluid"
-								alt="Escritorio"
-							/>
-						</div>
-					</div>
+						</figcaption>
+					</figure>
 				</div>
-			</div>
-			<!-- Fim Quem somos -->
+			</section>
 
 			<!-- Serviços -->
 			<div class="servicos" id="Servicos">

@@ -8,6 +8,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body {
+	background-color: #eff4f5;
+}
+
 body,
 input,
 button,
@@ -26,6 +30,10 @@ a {
 
 button {
 	cursor: pointer;
+}
+
+section {
+	padding: 2rem 0px;
 }
 
 .container {
@@ -54,4 +62,15 @@ button {
 	background-color: transparent;
 	border-color: #ff9933;
 	color: #ff9933;
+}
+
+.title {
+	color: #024e50;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2.375rem;
+	font-weight: 400;
+	margin-bottom: 2.5rem;
+	margin-top: 0px;
+	text-shadow: -0.03em -0.05em #ff9933;
+	text-transform: uppercase;
 }

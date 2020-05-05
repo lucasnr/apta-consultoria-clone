@@ -1,16 +1,14 @@
 .who-we-are figure {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	justify-content: space-between;
-	padding: 0px 2rem;
 }
 
-.who-we-are figure .title {
-	text-align: left;
-}
-
-.who-we-are figure > * {
-	width: calc(50% - 0.75rem);
+.who-we-are figure img {
+	border-radius: 0.25rem;
+	margin: auto;
+	max-width: 31.25rem;
+	width: 100%;
 }
 
 .who-we-are figure figcaption {
@@ -23,5 +21,31 @@
 	color: #212529;
 	font-size: 1rem;
 	line-height: 1.5;
+	margin-bottom: 1.5rem;
 	margin-top: auto;
+	text-align: justify;
+}
+
+@media (min-width: 768px) {
+	.who-we-are figure .title {
+		text-align: left;
+	}
+
+	.who-we-are figure {
+		flex-direction: row-reverse;
+		padding: 0px 2rem;
+	}
+
+	.who-we-are figure > * {
+		width: calc(50% - 0.75rem) !important;
+	}
+
+	.who-we-are figure > img {
+		margin: 0px;
+	}
+
+	.who-we-are figure figcaption p {
+		margin-bottom: 0px;
+		text-align: left;
+	}
 }

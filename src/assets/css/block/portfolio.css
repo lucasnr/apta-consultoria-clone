@@ -1,12 +1,6 @@
-.portfolio ul {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
 .portfolio ul li {
+	margin-bottom: 1.5rem;
 	position: relative;
-	width: calc(50% - 0.75rem);
 }
 
 .portfolio ul li p {
@@ -21,9 +15,10 @@
 	opacity: 0;
 	padding: 0.75rem;
 	position: absolute;
-	right: 0px;
+	right: 50%;
 	text-align: center;
 	top: 0px;
+	transform: translateX(50%);
 	transition: opacity 0.2s ease;
 	width: 100%;
 }
@@ -38,17 +33,40 @@
 
 .portfolio ul li img {
 	display: block;
-	margin-left: auto;
+	margin: auto;
 }
 
 .portfolio ul li img,
 .portfolio ul li p {
+	border-radius: 0.25rem;
 	max-width: 22.5rem;
 }
 
-.portfolio ul li:nth-child(even) img,
-.portfolio ul li:nth-child(even) p {
-	margin-left: 0px;
-	margin-right: auto;
-	left: 0;
+@media (min-width: 768px) {
+	.portfolio ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.portfolio ul li {
+		width: calc(50% - 0.75rem);
+	}
+
+	.portfolio ul li img {
+		margin-left: auto;
+		margin-right: 0px;
+	}
+
+	.portfolio ul li p {
+		right: 0;
+		transform: none;
+	}
+
+	.portfolio ul li:nth-child(even) img,
+	.portfolio ul li:nth-child(even) p {
+		margin-left: 0px;
+		margin-right: auto;
+		left: 0;
+	}
 }

@@ -1,9 +1,9 @@
 .navbar {
 	background: rgba(239, 244, 245, 0.9);
+	left: 0;
 	padding: 1rem 0px;
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
 	z-index: 25;
 }
@@ -11,10 +11,18 @@
 .navbar .container {
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+	max-height: 3.125rem;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
 }
 
-.navbar a {
+.navbar.show .container {
+	max-height: 100vh;
+}
+
+.navbar .navbar__brand {
 	display: flex;
 }
 
@@ -22,10 +30,29 @@
 	width: 7rem;
 }
 
+.navbar .navbar__button-wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.navbar .navbar__button {
+	background: none;
+	border: none;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-size: 2rem;
+}
+
 .navbar .navbar__nav {
 	display: flex;
-	text-transform: uppercase;
 	font-weight: 600;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	min-height: calc(100vh - 4.25rem);
+	text-transform: uppercase;
 }
 
 .navbar .navbar__nav li {
@@ -35,11 +62,41 @@
 .navbar .navbar__nav li a {
 	color: #024e50;
 	opacity: 0.75;
-	padding: 1rem 0.75rem;
+	font-size: 1.25rem;
+	padding: 1em 0.75em;
+	text-align: center;
 	transition: opacity 0.2s ease;
+	width: 100%;
+	white-space: nowrap;
 }
 
 .navbar .navbar__nav li a:hover,
 .navbar .navbar__nav li a:focus {
 	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.navbar .container {
+		flex-direction: row;
+		min-height: auto;
+	}
+
+	.navbar .navbar__button {
+		display: none;
+	}
+
+	.navbar .navbar__nav {
+		flex-direction: row;
+		min-height: auto;
+	}
+
+	.navbar .navbar__nav li a {
+		font-size: 0.875rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar .navbar__nav li a {
+		font-size: 1rem;
+	}
 }

@@ -1,10 +1,8 @@
-#blog .cards {
-	display: flex;
-	justify-content: space-between;
-}
-
 #blog .cards > * {
-	width: calc(33.33% - 0.75rem);
+	display: flex;
+	max-width: 31.25rem;
+	margin: auto;
+	margin-bottom: 1rem;
 }
 
 #blog .cards img {
@@ -16,4 +14,22 @@
 	display: table;
 	margin: auto;
 	margin-top: 2.75rem;
+}
+
+@media (min-width: 576px) {
+	#blog .cards > * {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#blog .cards {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#blog .cards > * {
+		margin: 0px !important;
+		width: calc(33.33% - 0.75rem);
+	}
 }

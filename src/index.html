@@ -16,6 +16,10 @@
 			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
@@ -27,6 +31,7 @@
 		<link rel="stylesheet" href="./assets/css/block/blog.css" />
 		<link rel="stylesheet" href="./assets/css/block/clients.css" />
 		<link rel="stylesheet" href="./assets/css/contact.css" />
+		<link rel="stylesheet" href="./assets/css/block/footer.css" />
 	</head>
 
 	<body>
@@ -420,84 +425,73 @@
 			></iframe>
 		</main>
 
-		<!-- Footer -->
-		<footer>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-10">
-						<div class="info">
-							<img src="/static/img/envelope.png" class="icone" alt="e-mail" />
-							<p>
-								<a
-									href="/cdn-cgi/l/email-protection"
-									class="__cf_email__"
-									data-cfemail="7415040015171b1a070118001b061d151e06341319151d185a171b19"
-									>[email&#160;protected]</a
-								>
-							</p>
-							<br />
-						</div>
-
-						<div class="info">
-							<img src="/static/img/clock.png" class="icone" alt="relógio" />
-							<p>
-								Horário:<br />Segunda à Sexta: 08h00-12h00,<br />14h00-18h00<br />Sábado
-								e Domingo: Fechado
-							</p>
-						</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__info">
+					<div>
+						<i class="mdi mdi-email"></i>
+						<a
+							href="mailto:aptaconsultoriajr@gmail.com"
+							class="footer__info__text"
+						>
+							aptaconsultoriajr@gmail.com
+						</a>
 					</div>
 
-					<div class="col-lg-2">
-						<div class="icone-1">
-							<a
-								href="https://www.facebook.com/aptaconsultoriajr/"
-								target="_blank"
-								><img
-									src="/static/img/facebook.png"
-									class="icone"
-									alt="Facebook"
-							/></a>
-						</div>
+					<div>
+						<i class="mdi mdi-clock"></i>
+						<h6 class="footer__info__text">
+							Horário:<br />
+							Segunda à Sexta: <time>08h00-12h00</time>
+							<br />
+							<time>14h00-18h00</time>
+							<br />
 
-						<div class="icone-2">
-							<a
-								href="https://www.instagram.com/aptaconsultoria/?hl=pt-br"
-								target="_blank"
-								><img
-									src="/static/img/instagram.png"
-									class="icone"
-									alt="Instagram"
-							/></a>
-						</div>
+							Sábado e Domingo: Fechado
+						</h6>
+					</div>
+				</div>
 
-						<div class="icone-3">
-							<a
-								href="https://api.whatsapp.com/send?phone=558498325622"
-								target="_blank"
-								><img
-									src="/static/img/whatsapp.png"
-									class="icone"
-									alt="Whatsapp"
-							/></a>
-						</div>
+				<div class="footer__social-media">
+					<div>
+						<a
+							href="https://www.facebook.com/aptaconsultoriajr/"
+							target="_blank"
+						>
+							<i class="mdi mdi-facebook"></i>
+						</a>
+					</div>
 
-						<div class="icone-4">
-							<a href="/blog/" target="_blank"
-								><img src="/static/img/blog.png" class="icone" alt="blog"
-							/></a>
-						</div>
+					<div>
+						<a
+							href="https://www.instagram.com/aptaconsultoria/?hl=pt-br"
+							target="_blank"
+						>
+							<i class="mdi mdi-instagram"></i>
+						</a>
+					</div>
+
+					<div>
+						<a
+							href="https://api.whatsapp.com/send?phone=558498325622"
+							target="_blank"
+						>
+							<i class="mdi mdi-whatsapp"></i>
+						</a>
+					</div>
+
+					<div>
+						<a href="http://www.aptaconsultoriajr.com.br/blog/" target="_blank">
+							<i class="mdi mdi-blogger"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="rodape">
-				<p>
-					Apta Consultoria Jr © 2019 Todos os Direitos Reservados | Desenvolvido
-					pela
-				</p>
-				<a href="http://www.ejectufrn.com.br/"
-					><img src="/static/img/eject-white.png" alt="EJECT"
-				/></a>
+			<div class="container">
+				<h5 class="footer__bottom">
+					Apta Consultoria Jr © 2019 Todos os Direitos Reservados
+				</h5>
 			</div>
 		</footer>
 	</body>

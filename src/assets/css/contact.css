@@ -1,4 +1,4 @@
-.contacts {
+.contact {
 	align-items: center;
 	background-color: rgba(2, 78, 80, 0.55);
 	display: flex;
@@ -10,7 +10,7 @@
 	position: relative;
 }
 
-.contacts::after {
+.contact::after {
 	background-image: url(../img/members4.jpg);
 	background-position: top center;
 	background-size: cover;
@@ -25,7 +25,7 @@
 	z-index: -1;
 }
 
-.contacts .title {
+.contact .title {
 	color: #eff4f5;
 	font-size: 4rem;
 	margin-bottom: 1.5rem;

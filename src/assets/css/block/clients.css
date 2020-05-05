@@ -1,0 +1,15 @@
+.clients .logos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.clients a {
+	display: flex;
+	padding: 1rem;
+	width: 11rem;
+}
+
+.clients a img {
+	width: 100%;
+}

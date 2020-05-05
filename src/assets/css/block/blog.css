@@ -1,0 +1,19 @@
+#blog .cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+#blog .cards > * {
+	width: calc(33.33% - 0.75rem);
+}
+
+#blog .cards img {
+	border-radius: 0.25rem;
+	width: 100%;
+}
+
+#blog .btn {
+	display: table;
+	margin: auto;
+	margin-top: 2.75rem;
+}

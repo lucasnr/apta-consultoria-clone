@@ -1,5 +1,4 @@
 .services {
-	background-color: rgba(2, 78, 80, 0.075);
 	text-align: center;
 }
 
@@ -39,11 +38,4 @@
 .service .btn {
 	font-size: 1.125rem;
 	margin-top: auto;
-}
-
-.service .btn:hover,
-.service .btn:focus {
-	background-color: #024e50;
-	border-color: #024e50;
-	color: #fff;
 }

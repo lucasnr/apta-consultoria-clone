@@ -57,12 +57,19 @@ section {
 	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
+.btn:hover,
+.btn:focus {
+	background-color: #024e50;
+	border-color: #024e50;
+	color: #fff;
+}
+
 .btn.btn--big {
 	padding: 1em 1.25em;
 }
 
-.btn:hover,
-.btn:focus {
+.btn.btn--big:hover,
+.btn.btn--big:focus {
 	background-color: transparent;
 	border-color: #ff9933;
 	color: #ff9933;
@@ -78,4 +85,8 @@ section {
 	text-align: center;
 	text-shadow: -0.03em -0.05em #ff9933;
 	text-transform: uppercase;
+}
+
+.bg-1 {
+	background-color: rgba(2, 78, 80, 0.075);
 }

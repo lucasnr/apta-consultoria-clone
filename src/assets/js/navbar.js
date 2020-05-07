@@ -1,14 +1,22 @@
-const navbar = document.querySelector('#navbar');
-const links = navbar.querySelectorAll('.navbar__nav li a');
-
-links.forEach(setOnClick);
+const navbar = $('#navbar');
+const navbarHeight = navbar.outerHeight();
 
 function toggleNavbar() {
-	navbar.classList.toggle('show');
+	navbar.toggleClass('show');
 }
 
-function setOnClick(element) {
-	element.onclick = function () {
-		if (navbar.classList.contains('show')) navbar.classList.remove('show');
-	};
-}
+const links = $('.navbar__nav li a');
+links.each(function (index, element) {
+	const $element = $(element);
+	$element.click(function (event) {
+		event.preventDefault();
+
+		if (navbar.hasClass('show')) navbar.removeClass('show');
+
+		const $target = $($element.attr('href'));
+		$('html, body').animate(
+			{ scrollTop: $target.offset().top - navbarHeight },
+			500
+		);
+	});
+});

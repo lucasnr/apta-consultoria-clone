@@ -57,6 +57,7 @@ section {
 	text-shadow: 1px 1px 1px #232323;
 	text-transform: uppercase;
 	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .btn:hover,
@@ -91,4 +92,8 @@ section {
 
 .bg-1 {
 	background-color: rgba(2, 78, 80, 0.075);
+}
+
+.mdi {
+	display: flex;
 }

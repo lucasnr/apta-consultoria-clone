@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0," />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta
 			name="Description"
@@ -37,6 +37,7 @@
 		<link rel="stylesheet" href="./assets/css/block/clients.css" />
 		<link rel="stylesheet" href="./assets/css/contact.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
+		<link rel="stylesheet" href="./assets/css/block/modal.css" />
 	</head>
 
 	<body>
@@ -110,11 +111,21 @@
 			</section>
 
 			<section class="services bg-1" id="servicos">
+				<div class="modal">
+					<div class="modal__content">
+						<button><i class="mdi mdi-close"></i></button>
+						<span class="modal__text"></span>
+					</div>
+				</div>
+
 				<div class="container">
 					<h2 class="title">Serviços</h2>
 
 					<ul class="services__list">
-						<li class="service">
+						<li
+							class="service"
+							data-modal-content="Após estabelecer com você qual o perfil do candidato desejado e as habilidades e competências necessárias para o cargo, realizaremos todo o processo de recrutamento e selecionaremos os candidatos mais adequados para o seu perfil para que ao final do processo você escolha o profissional que mais se encaixa com a sua empresa."
+						>
 							<img
 								src="./assets/img/icons/selection.svg"
 								alt="Ícone de um serviço"
@@ -129,7 +140,10 @@
 							<button class="btn">Saiba mais</button>
 						</li>
 
-						<li class="service">
+						<li
+							class="service"
+							data-modal-content="Através da Pesquisa de Clima Organizacional, medimos quantitativamente o relacionamento entre os funcionários e a empresa. Através dessa pesquisa, elaboramos uma análise, um diagnóstico e possíveis soluções para os problemas encontrados."
+						>
 							<img
 								src="./assets/img/icons/research.svg"
 								alt="Ícone de um serviço"
@@ -144,7 +158,10 @@
 							<button class="btn">Saiba mais</button>
 						</li>
 
-						<li class="service">
+						<li
+							class="service"
+							data-modal-content="O documento de Descrição e Análise de cargos contem uma descrição completa das atribuições, deveres e responsabilidades de um cargo, além de conter uma análise das habilidades, capacidades e conhecimentos requisitados para o pleno cumprimento de cada função."
+						>
 							<img
 								src="./assets/img/icons/description.svg"
 								alt="Ícone de um serviço"
@@ -159,7 +176,10 @@
 							<button class="btn">Saiba mais</button>
 						</li>
 
-						<li class="service">
+						<li
+							class="service"
+							data-modal-content="Realizamos treinamentos buscando aprimorar ou desenvolver habilidades e conhecimentos considerados necessários para a plena realização das atividades de cada cargo na sua empresa, possibilitando uma melhora no desempenho dos seus colaboradores."
+						>
 							<img
 								src="./assets/img/icons/training.svg"
 								alt="Ícone de um serviço"
@@ -504,6 +524,12 @@
 			</h5>
 		</footer>
 
-		<script src="./assets/js/navbar.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./assets/js/navbar.js"></script>
+		<script defer src="./assets/js/servicos.js"></script>
 	</body>
 </html>

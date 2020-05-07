@@ -34,6 +34,7 @@
 .portfolio ul li img {
 	display: block;
 	margin: auto;
+	width: 100%;
 }
 
 .portfolio ul li img,

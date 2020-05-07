@@ -96,7 +96,15 @@
 }
 
 @media (min-width: 992px) {
+	.navbar .navbar__nav {
+		margin-right: 0px;
+	}
+
 	.navbar .navbar__nav li a {
 		font-size: 1rem;
+	}
+
+	.navbar .navbar__button-wrapper {
+		width: auto;
 	}
 }

@@ -2,12 +2,17 @@
 	align-items: center;
 	background-color: rgba(2, 78, 80, 0.41);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 5.125rem;
 	min-height: calc(100vh - 5.125rem);
 	overflow: hidden;
 	padding: 2.5rem 0px;
 	position: relative;
+}
+
+.ie-container {
+	display: flex;
+	flex-direction: column;
 }
 
 .header::after {

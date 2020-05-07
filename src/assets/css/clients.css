@@ -1,0 +1,101 @@
+.clients .title:nth-of-type(2) {
+	margin-bottom: 0px;
+	margin-top: 1.5rem;
+}
+
+.clients .logos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.clients .logo {
+	display: flex;
+	height: 11rem;
+	padding: 1rem;
+	width: 11rem;
+}
+
+.clients .logo::after {
+	background-size: 45rem 36rem;
+	content: '';
+	background-image: url(../img/clients_sprites.png);
+	height: 100%;
+	width: 100%;
+}
+
+.clients .logo.logo--econsul::after {
+	background-position: 50% 0%;
+}
+
+.clients .logo.logo--pet-geografia::after {
+	background-position: 25% 100%;
+}
+
+.clients .logo.logo--new-vision::after {
+	background-position: 75% 66.66%;
+}
+
+.clients .logo.logo--pet-producao::after {
+	background-position: 50% 100%;
+}
+
+.clients .logo.logo--imd::after {
+	background-position: 25% 66.66%;
+}
+
+.clients .logo.logo--eject::after {
+	background-position: 50% 33.33%;
+}
+
+.clients .logo.logo--include::after {
+	background-position: 50% 66.66%;
+}
+
+.clients .logo.logo--casa-sefora::after {
+	background-position: 0% 33.33%;
+}
+
+.clients .logo.logo--produtiva-junior::after {
+	background-position: 100% 0%;
+}
+
+.clients .logo.logo--amd-consult::after {
+	background-position: 25% 0%;
+}
+
+.clients .logo.logo--influx::after {
+	background-position: 75% 0%;
+}
+
+.clients .logo.logo--remax::after {
+	background-position: 75% 100%;
+}
+
+.clients .logo.logo--pet-ee::after {
+	background-position: 0% 100%;
+}
+
+.clients .logo.logo--gaac::after {
+	background-position: 0% 66.66%;
+}
+
+.clients .logo.logo--59mil::after {
+	background-position: 100% 66.66%;
+}
+
+.clients .logo.logo--actuar::after {
+	background-position: 0% 0%;
+}
+
+.clients .logo.logo--massa-mia::after {
+	background-position: 75% 33.33%;
+}
+
+.clients .logo.logo--solidus-junior::after {
+	background-position: 100% 33.33%;
+}
+
+.clients .logo.logo--consej::after {
+	background-position: 25% 33.33%;
+}

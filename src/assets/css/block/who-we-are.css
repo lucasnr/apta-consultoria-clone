@@ -1,27 +1,27 @@
-.who-we-are figure {
+.who-we-are .container {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
-.who-we-are figure picture {
+.who-we-are picture {
 	display: inline-flex;
 }
 
-.who-we-are figure img {
+.who-we-are img {
 	border-radius: 0.25rem;
 	margin: auto;
 	max-width: 31.25rem;
 	width: 100%;
 }
 
-.who-we-are figure figcaption {
+.who-we-are .text {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.who-we-are figure figcaption p {
+.who-we-are .text p {
 	color: #212529;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -31,24 +31,24 @@
 }
 
 @media (min-width: 768px) {
-	.who-we-are figure .title {
+	.who-we-are .title {
 		text-align: left;
 	}
 
-	.who-we-are figure {
-		flex-direction: row-reverse;
+	.who-we-are .container {
+		flex-direction: row;
 		padding: 0px 2rem;
 	}
 
-	.who-we-are figure > * {
+	.who-we-are .container > * {
 		width: calc(50% - 0.75rem) !important;
 	}
 
-	.who-we-are figure > img {
+	.who-we-are img {
 		margin: 0px;
 	}
 
-	.who-we-are figure figcaption p {
+	.who-we-are .text p {
 		margin-bottom: 0px;
 		text-align: left;
 	}

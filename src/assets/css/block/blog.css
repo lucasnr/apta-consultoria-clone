@@ -5,6 +5,7 @@
 	margin-bottom: 1rem;
 }
 
+#blog .cards picture,
 #blog .cards img {
 	border-radius: 0.25rem;
 	width: 100%;

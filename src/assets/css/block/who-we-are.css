@@ -4,6 +4,10 @@
 	justify-content: space-between;
 }
 
+.who-we-are figure picture {
+	display: inline-flex;
+}
+
 .who-we-are figure img {
 	border-radius: 0.25rem;
 	margin: auto;

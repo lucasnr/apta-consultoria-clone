@@ -1,9 +1,13 @@
-.portfolio ul li {
+.portfolio {
 	margin-bottom: 1.5rem;
 	position: relative;
 }
 
-.portfolio ul li p {
+.portfolio picture {
+	display: flex;
+}
+
+.portfolio .portfolio__text {
 	align-items: center;
 	background-color: rgba(1, 61, 63, 0.6);
 	color: #eff4f5;
@@ -23,49 +27,49 @@
 	width: 100%;
 }
 
-.portfolio ul li:hover p {
+.portfolio:hover .portfolio__text {
 	opacity: 1;
 }
 
-.portfolio ul li:hover img {
+.portfolio:hover img {
 	filter: blur(1px);
 }
 
-.portfolio ul li img {
+.portfolio img {
 	display: block;
 	margin: auto;
 	width: 100%;
 }
 
-.portfolio ul li img,
-.portfolio ul li p {
+.portfolio img,
+.portfolio .portfolio__text {
 	border-radius: 0.25rem;
 	max-width: 22.5rem;
 }
 
 @media (min-width: 768px) {
-	.portfolio ul {
+	#portfolio ul {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
 
-	.portfolio ul li {
+	.portfolio {
 		width: calc(50% - 0.75rem);
 	}
 
-	.portfolio ul li img {
+	.portfolio img {
 		margin-left: auto;
 		margin-right: 0px;
 	}
 
-	.portfolio ul li p {
+	.portfolio .portfolio__text {
 		right: 0;
 		transform: none;
 	}
 
-	.portfolio ul li:nth-child(even) img,
-	.portfolio ul li:nth-child(even) p {
+	.portfolio:nth-child(even) img,
+	.portfolio:nth-child(even) .portfolio__text {
 		margin-left: 0px;
 		margin-right: auto;
 		left: 0;

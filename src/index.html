@@ -47,10 +47,13 @@
 			<div class="container">
 				<div class="navbar__button-wrapper">
 					<a class="navbar__brand" href="#inicio">
-						<img
-							src="./assets/img/logo.png"
-							alt="Logomarca da Apta Consultoria Jr"
-						/>
+						<picture>
+							<source srcset="./assets/img/logo.webp" type="image/webp" />
+							<img
+								src="./assets/img/logo.png"
+								alt="Logomarca da Apta Consultoria Jr"
+							/>
+						</picture>
 					</a>
 
 					<button class="navbar__button" onclick="toggleNavbar();">
@@ -92,11 +95,17 @@
 			<section class="who-we-are" id="quem-somos">
 				<div class="container">
 					<figure>
-						<img
-							class="lazyload"
-							data-src="./assets/img/members1.jpg"
-							alt="Foto dos membros da Apta Consultoria Jr"
-						/>
+						<picture>
+							<source
+								data-srcset="./assets/img/members1.webp"
+								type="image/webp"
+							/>
+							<img
+								class="lazyload"
+								data-src="./assets/img/members1.jpg"
+								alt="Foto dos membros da Apta Consultoria Jr"
+							/>
+						</picture>
 
 						<figcaption>
 							<h2 class="title">Quem somos</h2>
@@ -207,19 +216,25 @@
 				</div>
 			</section>
 
-			<section class="portfolio" id="portfolio">
+			<section id="portfolio">
 				<div class="container">
 					<h2 class="title">Portfólio</h2>
 
 					<ul>
-						<li>
-							<img
-								class="lazyload"
-								data-src="./assets/img/members2.jpg"
-								alt="Membros da Apta no Portto"
-							/>
+						<li class="portfolio">
+							<picture>
+								<source
+									data-srcset="./assets/img/members2.webp"
+									type="image/webp"
+								/>
+								<img
+									class="lazyload"
+									data-src="./assets/img/members2.jpg"
+									alt="Membros da Apta no Portto"
+								/>
+							</picture>
 
-							<p>
+							<p class="portfolio__text">
 								No mês de junho de 2019, o nosso time participou do Portto,
 								evento realizado pela RN Júnior, onde tivemos diversas
 								capacitações, treinamentos e uma vivência empresarial através da
@@ -227,14 +242,20 @@
 							</p>
 						</li>
 
-						<li>
-							<img
-								class="lazyload"
-								data-src="./assets/img/members3.jpg"
-								alt="Membros da Apta no Psicafé"
-							/>
+						<li class="portfolio">
+							<picture>
+								<source
+									data-srcset="./assets/img/members3.webp"
+									type="image/webp"
+								/>
+								<img
+									class="lazyload"
+									data-src="./assets/img/members3.jpg"
+									alt="Membros da Apta no Psicafé"
+								/>
+							</picture>
 
-							<p>
+							<p class="portfolio__text">
 								No dia 27 de agosto de 2019, realizamos um Psicafé em
 								comemoração do dia do psicólogo no qual tratamos os desafios e
 								oportunidades que a internet traz ao fazer da psicologia.
@@ -253,33 +274,51 @@
 							href="http://www.aptaconsultoriajr.com.br/blog/o-mindfulness-como-ferramenta-para-melhorar-o-seu-/"
 							target="_blank"
 						>
-							<img
-								class="lazyload"
-								data-src="./assets/img/blog1.jpg"
-								alt="O mindfulness como ferramenta para melhorar o seu desempenho no trabalho"
-							/>
+							<picture>
+								<source
+									data-srcset="./assets/img/blog3.webp"
+									type="image/webp"
+								/>
+								<img
+									class="lazyload"
+									data-src="./assets/img/blog1.jpg"
+									alt="O mindfulness como ferramenta para melhorar o seu desempenho no trabalho"
+								/>
+							</picture>
 						</a>
 
 						<a
 							href="http://www.aptaconsultoriajr.com.br/blog/trabalho-remoto-dicas-de-como-acompanhar-sua-equip/"
 							target="_blank"
 						>
-							<img
-								class="lazyload"
-								data-src="./assets/img/blog2.jpg"
-								alt="Trabalho Remoto: dicas de como acompanhar sua equipe nesse período"
-							/>
+							<picture>
+								<source
+									data-srcset="./assets/img/blog2.webp"
+									type="image/webp"
+								/>
+								<img
+									class="lazyload"
+									data-src="./assets/img/blog2.jpg"
+									alt="Trabalho Remoto: dicas de como acompanhar sua equipe nesse período"
+								/>
+							</picture>
 						</a>
 
 						<a
 							href="http://www.aptaconsultoriajr.com.br/blog/importancia-do-home-office-em-meio-atual-crise/"
 							target="_blank"
 						>
-							<img
-								class="lazyload"
-								data-src="./assets/img/blog3.jpg"
-								alt="A importância do Home Office em meio à atual crise"
-							/>
+							<picture>
+								<source
+									data-srcset="./assets/img/blog3.webp"
+									type="image/webp"
+								/>
+								<img
+									class="lazyload"
+									data-src="./assets/img/blog3.jpg"
+									alt="A importância do Home Office em meio à atual crise"
+								/>
+							</picture>
 						</a>
 					</div>
 

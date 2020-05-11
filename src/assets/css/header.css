@@ -16,7 +16,7 @@
 }
 
 .header::after {
-	background-image: url(../img/members0.jpg);
+	background-image: url(../img/members0.webp);
 	background-position: center;
 	background-size: cover;
 	content: '';
@@ -57,5 +57,11 @@
 
 	.header .btn {
 		width: auto;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.header::after {
+		background-image: url(../img/members0.jpg);
 	}
 }

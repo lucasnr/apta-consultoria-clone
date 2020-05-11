@@ -11,7 +11,7 @@
 }
 
 .contact::after {
-	background-image: url(../img/members4.jpg);
+	background-image: url(../img/members4.webp);
 	background-position: top center;
 	background-size: cover;
 	content: '';
@@ -30,4 +30,10 @@
 	font-size: 4rem;
 	margin-bottom: 1.5rem;
 	text-shadow: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.contact::after {
+		background-image: url(../img/members4.jpg);
+	}
 }

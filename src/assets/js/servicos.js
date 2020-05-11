@@ -22,10 +22,8 @@ function configureModals() {
 	buttons.each(function (index, element) {
 		const $element = $(element);
 		$element.click(function () {
-			modal
-				.find('.modal__text')
-				.text($element.parent().attr('data-modal-content'));
-			modal.focus();
+			const text = modal.find('.modal__text');
+			text.text($element.parent().attr('data-modal-content'));
 
 			if (navbar) navbar.css('padding-right', scrollbarWidth);
 			body.css('padding-right', scrollbarWidth);

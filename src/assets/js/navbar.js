@@ -12,7 +12,7 @@ var navbar = $('#navbar');
 	});
 
 	var navbarHeight = navbar.outerHeight();
-	var links = $('.navbar__nav li a');
+	var links = navbar.find('a');
 	links.each(function (index, element) {
 		var $element = $(element);
 		$element.click(function (event) {

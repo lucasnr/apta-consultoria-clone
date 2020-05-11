@@ -16,7 +16,7 @@
 }
 
 .header::after {
-	background-image: url(../img/members0.webp);
+	background-image: url(./assets/img/members0.webp);
 	background-position: center bottom;
 	background-size: cover;
 	content: '';

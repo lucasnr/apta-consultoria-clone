@@ -1,8 +1,9 @@
 const { src, dest, series } = require('gulp'),
 	clean = require('gulp-clean'),
-	cssmin = require('gulp-cssmin'),
 	usemin = require('gulp-usemin'),
-	inlinesource = require('gulp-inline-source'),
+	cssmin = require('gulp-cssmin'),
+	cleancss = require('gulp-clean-css'),
+	uglify = require('gulp-uglify'),
 	htmlmin = require('gulp-htmlmin');
 
 function cleanDist() {
@@ -18,13 +19,11 @@ function buildHtml() {
 		.pipe(
 			usemin({
 				css: [cssmin],
+				inlinecss: [cleancss, 'concat'],
+				inlinejs: [uglify],
 			})
 		)
 		.pipe(dest('dist/'));
-}
-
-function inlineJs() {
-	return src('dist/**/*.html').pipe(inlinesource()).pipe(dest('dist/'));
 }
 
 function minifyHtml() {
@@ -33,4 +32,4 @@ function minifyHtml() {
 		.pipe(dest('dist/'));
 }
 
-exports.default = series(cleanDist, copyDist, buildHtml, inlineJs, minifyHtml);
+exports.default = series(cleanDist, copyDist, buildHtml, minifyHtml);

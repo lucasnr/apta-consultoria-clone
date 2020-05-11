@@ -1,10 +1,8 @@
-configureModals();
-
-function configureModals() {
-	const body = $('body');
-	const modal = $('#servicos .modal');
-	const scrollbarWidth = window.innerWidth - body.width();
-	const buttons = $('.services .service .btn');
+(function () {
+	var body = $('body');
+	var modal = $('#servicos .modal');
+	var scrollbarWidth = window.innerWidth - body.width();
+	var buttons = $('.services .service .btn');
 
 	function dismiss() {
 		if (navbar) navbar.css('padding-right', 0);
@@ -20,9 +18,9 @@ function configureModals() {
 	}
 
 	buttons.each(function (index, element) {
-		const $element = $(element);
+		var $element = $(element);
 		$element.click(function () {
-			const text = modal.find('.modal__text');
+			var text = modal.find('.modal__text');
 			text.text($element.parent().attr('data-modal-content'));
 
 			if (navbar) navbar.css('padding-right', scrollbarWidth);
@@ -34,4 +32,4 @@ function configureModals() {
 			$(document).keydown(keydownCallback);
 		});
 	});
-}
+})();

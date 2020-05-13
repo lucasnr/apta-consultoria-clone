@@ -1,4 +1,4 @@
 [[headers]]
   for = "/"
   [headers.values]
-    Link = "<assets/img/members0.webp>; rel=preload; as=image"
+    Link = "<assets/img/members0.webp>; rel=preload; as=image, <assets/img/logo.webp>; rel=preload; as=image"

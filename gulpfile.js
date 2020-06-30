@@ -1,7 +1,5 @@
-const { src, dest, series } = require('gulp'),
+const { src, dest, series, parallel } = require('gulp'),
 	clean = require('gulp-clean'),
-	usemin = require('gulp-usemin'),
-	cssmin = require('gulp-cssmin'),
 	cleancss = require('gulp-clean-css'),
 	uglify = require('gulp-uglify'),
 	htmlmin = require('gulp-htmlmin');
@@ -11,19 +9,19 @@ function cleanDist() {
 }
 
 function copyDist() {
-	return src(['src/**/*', '!src/assets/css/**']).pipe(dest('dist/'));
+	return src(['src/**/*', '!src/assets/css/**', '!src/assets/js/**']).pipe(
+		dest('dist/')
+	);
 }
 
-function buildHtml() {
-	return src('src/**/*.html')
-		.pipe(
-			usemin({
-				css: [cssmin],
-				inlinecss: [cleancss, 'concat'],
-				inlinejs: [uglify],
-			})
-		)
-		.pipe(dest('dist/'));
+function minifyCss() {
+	return src('src/assets/css/**')
+		.pipe(cleancss({ compatibility: 'ie10' }))
+		.pipe(dest('dist/assets/css/'));
+}
+
+function minifyJs() {
+	return src('src/assets/js/**').pipe(uglify()).pipe(dest('dist/assets/js/'));
 }
 
 function minifyHtml() {
@@ -32,4 +30,9 @@ function minifyHtml() {
 		.pipe(dest('dist/'));
 }
 
-exports.default = series(cleanDist, copyDist, buildHtml, minifyHtml);
+exports.default = series(
+	cleanDist,
+	copyDist,
+	parallel(minifyCss, minifyJs, minifyHtml),
+	minifyHtml
+);
